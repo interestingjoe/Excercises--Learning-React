@@ -11,12 +11,16 @@ class App extends Component {
     increment = () => {
         this.setState({ count: this.state.count + 1 });
     }
+    decrement = () => {
+        this.setState({ count: this.state.count - 1 });
+    }
 
     render() {
         return (
             <div>
-                <button onClick={this.increment}>Increment</button>
-                {this.state.count}
+                {this.state.count}<br />
+                <button onClick={this.increment}>Increment</button><br />
+                <button onClick={this.decrement}>Decrement</button>
             </div>
         );
     }
