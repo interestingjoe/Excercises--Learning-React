@@ -22,11 +22,16 @@ class App extends Component {
     }
 
     render() {
+        let bulletedTodos = this.state.todos.map((e, i) => {
+            return (
+                <li key={i}>{e}</li>
+            );
+        });
         return (
             <div>
                 <input placeholder="Enter a Todo" value={this.state.currentTodo} onChange={this.onInputChange} />
                 <button onClick={this.appendCopy}>Add</button><br />
-                { this.state.todos.length === 0 ? "No Todos!" : "You have Todos" }
+                { this.state.todos.length === 0 ? "No Todos!" : <ul>{bulletedTodos}</ul> }
             </div>
         );
     }
