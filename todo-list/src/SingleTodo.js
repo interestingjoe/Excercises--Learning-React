@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+/*
 class SingleTodo extends Component {
     constructor() {
         super();
@@ -11,5 +12,13 @@ class SingleTodo extends Component {
         );
     }
 }
+*/
+
+const SingleTodo = props => {
+    return (
+        <li>{props.todo}<button onClick={props.delete}>x</button></li>
+    );
+}
+
 
 export default SingleTodo;
