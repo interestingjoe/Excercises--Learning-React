@@ -8,7 +8,12 @@ class App extends Component {
         };;
     }
     render() {
-
+        return (
+            <div>
+                <button>Increment</button>
+                {this.state.count}
+            </div>
+        );
     }
 }
 
