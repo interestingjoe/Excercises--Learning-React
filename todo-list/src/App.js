@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import SingleTodo from "./SingleTodo.js";
+
 
 class App extends Component {
     constructor() {
@@ -24,7 +26,7 @@ class App extends Component {
     render() {
         let bulletedTodos = this.state.todos.map((e, i) => {
             return (
-                <li key={i}>{e}</li>
+                <SingleTodo todo={e} />
             );
         });
         return (
