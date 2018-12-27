@@ -4,16 +4,29 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            todos: []
+            todos: [],
+            currentTodo: ""
         };
+    }
+
+    onInputChange = e => {
+        this.setState({ currentTodo: e.target.value });
+
+    }
+
+    appendCopy = () => {
+        let todosCopy = this.state.todos.slice();
+        todosCopy.push(this.state.currentTodo);
+
+        this.setState({ todos: todosCopy, currentTodo: "" });
     }
 
     render() {
         return (
             <div>
-                <input placeholder="Enter a Todo" />
-                <button>Add</button>
-                { this.state.todos.length === 0 ? "No Todos" : "You have Todos" }
+                <input placeholder="Enter a Todo" value={this.state.currentTodo} onChange={this.onInputChange} />
+                <button onClick={this.appendCopy}>Add</button><br />
+                { this.state.todos.length === 0 ? "No Todos!" : "You have Todos" }
             </div>
         );
     }
