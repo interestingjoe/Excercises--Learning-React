@@ -1,1 +1,1 @@
-# Excercises--React
+# Exercises--React
