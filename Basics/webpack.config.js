@@ -11,13 +11,13 @@ var config = {
         publicPath: "/app/"
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js?/,
                 include: SRC_DIR,
                 loader: "babel-loader",
                 query: {
-                    presets: ["react", "es2015", "state-2"]
+                    presets: ["react", "es2015", "stage-2"]
                 }
             }
         ]

@@ -1,1 +1,1 @@
-console.log("Loaded index.js file."):
+console.log("Loaded index.js file.");
