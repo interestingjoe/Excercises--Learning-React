@@ -3,7 +3,7 @@ import { render } from "react-dom";
 
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
-import { Body__Section } from "./components/Body__Section";
+import { Dynamic_Data } from "./components/Dynamic_Data";
 
 class App extends React.Component {
     render() {
@@ -21,7 +21,7 @@ class App extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
-                        <Body__Section/>
+                        <Dynamic_Data/>
                     </div>
                 </div>
             </div>
