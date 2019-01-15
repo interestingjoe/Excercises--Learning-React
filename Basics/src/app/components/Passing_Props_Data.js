@@ -6,6 +6,7 @@ export class Passing_Props_Data extends React.Component {
         console.log("--Checking Passing_Props_Data: ", this.props);
         return (
             <div>
+                <hr />
                 <h2>Passing Data with Props</h2>
                 <p>Your name is {this.props.name}.</p>
                 <p>Your age is {this.props.age}.</p>

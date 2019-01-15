@@ -7,6 +7,7 @@ export class Dynamic_Data extends React.Component {
 
         return (
             <div>
+                <hr />
                 <h2>Outputting Dynamic Data</h2>
                 {str}
                 { 10 === 3 ? "Yes" : "No" }
