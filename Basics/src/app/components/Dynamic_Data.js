@@ -8,9 +8,9 @@ export class Dynamic_Data extends React.Component {
         return (
             <div>
                 <h2>Outputting Dynamic Data</h2>
-                    {str}
-                    { 10 === 3 ? "Yes" : "No" }
-                    { <p>This is Just a test</p> }
+                {str}
+                { 10 === 3 ? "Yes" : "No" }
+                { <p>This is Just a test</p> }
             </div>
         );
     }
