@@ -26,5 +26,6 @@ export class Passing_Props_Data extends React.Component {
 Passing_Props_Data.propTypes = {
     name: PropTypes.string,
     age: PropTypes.number,
-    user: PropTypes.object
+    user: PropTypes.object,
+    children: PropTypes.element.isRequired
 };
